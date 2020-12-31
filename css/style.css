@@ -35,6 +35,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .container img {
@@ -394,5 +395,58 @@ i {
   .event-image {
     height: 20rem;
     width: 20rem;
+  }
+}
+@media (orientation: landscape) {
+  @media screen and (max-width: 1025px) {
+    .container-header {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+    .gallery {
+      width: 70%;
+      margin: 2.5rem auto;
+      text-align: center;
+    }
+    .concering-img-bg img {
+      width: 50%;
+      height: auto;
+    }
+    .container-quote {
+      font-size: 2.5rem;
+    }
+    .container-author {
+      font-size: 2rem;
+    }
+    .container-quote span {
+      bottom: 1rem;
+    }
+    .section {
+      display: block;
+    }
+    .concering-description {
+      transform: unset;
+      left: unset;
+      top: unset;
+    }
+  }
+}
+@media (orientation: landscape) {
+  @media screen and (max-width: 568px) {
+    .container-author {
+      font-size: 1.5rem;
+    }
+    .container-header {
+      font-size: 3rem;
+    }
+    .container-quote {
+      font-size: 2rem;
+    }
+    .container-quote span {
+      bottom: 0.7rem;
+    }
+    i {
+      font-size: 1.5rem;
+    }
   }
 }
